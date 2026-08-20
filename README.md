@@ -102,3 +102,17 @@ Background Table
 
 #### Filtered List
 
+- **Enhanced Data Validation:** Applied the filtered lists as data validation rules for the `Job Title`, `Country`, and `Type` fields to ensure:
+    - User input is limited to predefined and validated options
+    - Incorrect or inconsistent entries are minimized
+    - The overall usability and interactivity of the dashboard is improved
+
+
+
+<img src="/Imgaes/List.gif" width="425" height="400" alt="Salary Dashboard Data Validation">
+
+
+## Conclusion
+
+I created this dashboard to explore salary trends across various data-related job roles. Using data provided through my Excel course, the dashboard allows users to analyze how factors such as job title, location, and employment type can influence salaries and support more informed career decisions.
+
