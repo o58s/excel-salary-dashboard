@@ -66,10 +66,39 @@ IF(
 )
 ```
 
-- **Excel Features:** Used Excel’s map chart feature to visualize median salaries across different countries.
-- **Design Choice:** Applied color-coded regions to make differences in salary levels easier to identify.
+- **Multi-Criteria Filtering:** Filters the data based on job title, country, schedule type, and excludes entries with missing salary values.
+- **Array Formula:** Uses the MEDIAN() function with a nested IF() statement to evaluate multiple conditions across the dataset.
 - **Data Representation:** Displayed the median salary for each country with available data.
-- **Visual Enhancement:** Made geographic salary patterns easier to interpret and compare at a glance.
-- **Insights Gained:** Provides a clear overview of global salary differences and highlights regions with higher and lower median salaries.
+- **Tailored Insights:** Provides targeted salary insights based on the selected job title, location, and schedule type.
+- **Formula Purpose:** This formula populates the table below by calculating the median salary for the specified job title, country, and type.
 
+Background Table
+
+![Median-Salary-Table.png](Imgaes/Median-Salary-Table.png)
+
+
+#### Implementation
+
+<img src="/Imgaes/Implementation.png" width="400" height="500" alt="Salary Dashboard Title">
+
+#### Count of Job Schedule Type
+
+```
+=FILTER(J2#,(NOT(ISNUMBER(SEARCH("and",J2#))+ISNUMBER(SEARCH(",",J2#))))*(J2#<>0))
+```
+
+- **Unique List Generation:** Uses the FILTER() function to remove entries containing "and" or commas while excluding zero values.
+- **Formula Purpose:** This formula populates the table below with a clean list of unique job schedule types.
+
+Background Table
+
+![Type-Table.png](Imgaes/Type-Table.png)
+
+#### Implementation
+
+<img src="/Imgaes/Implementation2.png" width="350" height="500" alt="Salary Dashboard Type">
+
+### Data Validation
+
+#### Filtered List
 
